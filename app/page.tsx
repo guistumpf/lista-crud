@@ -49,7 +49,7 @@ export default function List() {
             value={input}
             onChange={(e) => setinput(e.target.value)}
             className="flex-1 border rounded-lg px-3 py-2 outline-none"
-            placeholder="Nova tarefa..."
+            placeholder="Adicione uma nova tarefa"
           />
           <button
             onClick={add}

@@ -36,11 +36,19 @@ export default function List() {
 
   }
 
+  function clear(){
+    const confirmed = confirm("Are you sure you want to clear every task?")
+
+    if(confirmed){
+      settarefas([])
+    }
+  }
+
   return (
     <div className="min-h-screen bg-white flex justify-center ">
       <div className="bg-white p-6 rounded-xl w-full max-w-md">
         <h1 className="text-3xl font-bold text-center mb-6">
-          Lista de Tarefas
+          Todo list
         </h1>
         {/* Input */}
         <div className="flex gap-2 mb-6">
@@ -49,14 +57,15 @@ export default function List() {
             value={input}
             onChange={(e) => setinput(e.target.value)}
             className="flex-1 border rounded-lg px-3 py-2 outline-none"
-            placeholder="Adicione uma nova tarefa"
-          />
+            placeholder="Add a new task"
+          /> 
           <button
             onClick={add}
             className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 cursor-pointer"
           >
             Add
           </button>
+          <button className="bg-red-500 text-white px-3 py-1 rounded " onClick={clear}>🗑 Clear</button>
         </div>
 
         {/* Tasks */}

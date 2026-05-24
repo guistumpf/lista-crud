@@ -3,4 +3,4 @@
 
 Lista de tarefas simples, sistema crud frontend
 
-(Deploy)[https://lista-crud.vercel.app/]
+[Deploy](https://lista-crud.vercel.app/)

@@ -104,7 +104,7 @@ setindex(null)
   
   <DropdownMenuItem>
     <FaArrowUpRightFromSquare />
-<span> <a href="https://lista-sql-pu4h.vercel.app">
+<span> <a href="https://lista-sql-pu4h.vercel.app" > 
   Vá para o site com Login
   </a>
   </span>
@@ -127,13 +127,13 @@ setindex(null)
               <div className="flex gap-2">
 <div className="flex items-center gap-1">
   <h1>Principal: </h1>
-                <a href="https://github.com/guistumpf/lista-sql" className="w-fit block">
+                <a href="https://github.com/guistumpf/lista-sql" className="w-fit block" onClick={(e) => e.stopPropagation()}>
                   <TbSourceCode className="text-lg mt-2 mb-2 cursor-pointer" title="Código Fonte do projeto principal " />
                 </a>
   </div>
 <div className="flex items-center gap-1">
   <h1>Sem Login: </h1>
-                <a href="https://github.com/guistumpf/lista-crud/tree/redirecionamento-lista-sql" className="w-fit block">
+                <a href="https://github.com/guistumpf/lista-crud/tree/redirecionamento-lista-sql" className="w-fit block" onClick={(e) => e.stopPropagation()}>
                   <TbSourceCode className="text-lg mt-2 mb-2 cursor-pointer" title="Código Fonte do projeto sem login (você está aqui!) " />
                 </a>
   </div>
